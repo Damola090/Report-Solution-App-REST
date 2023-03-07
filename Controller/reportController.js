@@ -2,7 +2,7 @@ const Category = require('../Models/Category');
 const Report = require('../Models/Report');
 const User = require('../Models/User');
 const mutler = require('multer');
-const cloudinary = require('cloudinary').v2;
+const cloudinary = require('cloudinary');
 
 
 //Create Report   - done
