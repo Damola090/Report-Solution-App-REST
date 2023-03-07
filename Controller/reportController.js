@@ -162,7 +162,6 @@ const UploadImageToCloudinary = async (req, res, next) => {
             message : "unable To Upload to Cloudinary"
         })
 
-
     }
 }
 
