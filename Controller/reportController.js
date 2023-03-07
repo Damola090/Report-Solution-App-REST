@@ -140,9 +140,13 @@ const UploadImageToCloudinary = async (req, res, next) => {
 
     try { 
 
-        const result = await cloudinary.uploader.upload(req.file.path, {
+        console.log(req.file.path, "Before Uploading")
+
+        const result = await cloudinary.v2.uploader.upload(req.file.path, {
             folder: 'products'
         })
+
+        console.log(result, "After Uploading")
 
         const cloudinaryObj = {
             public_id : result.public_id,
